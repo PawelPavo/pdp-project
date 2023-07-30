@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.addToCartBtn {
+  background-color: #fa6100;
+  color: white;
+}
+.addToCartBtn:hover {
+  background-color: white;
+  color: #fa6100;
+  border-color: #fa6100
+}
+
+.copyBtn {
+  border-color: #0D95A5;
+  color: #0D95A5;
+}
+
+.copyBtn:hover {
+  color: white;
+  background-color: #0D95A5; 
+}
+
+.copy {
+	cursor: pointer;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.autoship {
+	color: red;
+}
+
+.link:hover {
+	color: #0e2d52 !important;
+	
+}
+
+.learn_more {
+	font-weight: 700;
+	color: #0D95A5 !important;
+}
+
+.learn_more:hover {
+	color: #0e2d52 !important;
+}
+
+.opacity_custome {
+	opacity: 0.55;
+}
+
+.as_opacity_custome {
+	opacity: 0.7;
+}
+
+.desktop_autoship_pill {
+	font-size: 14px;
+}
+
+.custom_free_shipping {
+	font-size: 13px;
+}
+
+.nav-link {
+	color: #0D95A5 !important;
+	font-size: 1.3rem !important;
+	border-bottom: none !important;
+}
+
+.nav-link:hover {
+	color: #0e2d52 !important;
+	font-weight: 700;
+	border-color: #0e2d52 !important;
+	border-bottom: none !important;
+}
+
+.custom_badge {
+	background-color: #0e2d52 !important;
+}
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: #0e2d52 !important;
+	font-weight: 700;
+    background-color: var(--#{$prefix}nav-tabs-link-active-bg);
+    border-color: #0e2d52 !important;
+  }
+
+.nav-tabs {
+	border-bottom-color: #0e2d52 !important;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: #0e2d52;
+  --bs-tooltip-color: #FFFFFF;
+}
+

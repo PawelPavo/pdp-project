@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDP</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&family=Zilla+Slab&display=swap" rel="stylesheet">
+<link href="pdp_project.css" rel="stylesheet" type="text/css">
+<script>
+function myFunction() {
+   var element = document.getElementById("addToCart");
+   element.classList.toggle("collapse");
+}
+	
+	function changeAutoShipPrice (){
+		var element = document.getElementById("autoship_price");
+		element.classList.toggle("fs-4")
+		
+		var element = document.getElementById("original_price");
+		element.classList.toggle("fs-4")
+		
+		var element = document.getElementById("original_price");
+		element.classList.toggle("text-decoration-line-through")			
+    }
+	
+	function GetSelectedTextValue() {
+		var selectBox = document.getElementById("delivery_dropdown");
+  		var selectedValue = selectBox.value;
+		
+		if (selectedValue=="Deliver Once"){
+				var element = document.getElementById("original_price");
+				element.classList.toggle("text-decoration-line-through")
+				var element = document.getElementById("autoship_price");
+				element.classList.remove("fs-4")
+				var element = document.getElementById("og_price_wrapper")
+				element.classList.remove("opacity_custome")
+				document.querySelector("#add_to_cart_DT").textContent = "Add to Cart";
+				document.querySelector("#sub_to_autoship").textContent = "Pay less with AutoShip:";
+				var element = document.getElementById("as_price_wrapper")
+				element.classList.add("as_opacity_custome")
+		} else {
+			var element = document.getElementById("autoship_price");
+			element.classList.add("fs-4")
+			var element = document.getElementById("original_price");
+			element.classList.add("text-decoration-line-through")
+			document.querySelector("#add_to_cart_DT").textContent = "Subscribe to AutoShip";
+			var element = document.getElementById("add_to_cart_DT")
+			element.classList.add("fw-bold")
+			var element = document.getElementById("og_price_wrapper")
+			element.classList.add("opacity_custome")
+			var element = document.getElementById("as_price_wrapper")
+			element.classList.remove("as_opacity_custome")
+			document.querySelector("#sub_to_autoship").textContent = "";
+		}
+		
+		
+		
+	}
+	
+</script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-9 py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="text-center my-2"> <img src="https://www.lifeextension.com/-/media/lifeextension/products/large/01637.png?rev=f84557186a484f3eadd9dfd4e8b576e8&amp;la=en&amp;h=400&amp;hash=C8BF27153087BC70002EA52A84705F12" class="w-50 card-img-top" alt=""> </div>
+            <div class="card-body">
+              <p class="card-text text-center">Click to Zoom</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 px-md-0">
+          <h1 style="color: #0e2d52">Pycnogenol®</h1>
+          <h2 class="fs-4 fw-normal" style="color: #0e2d52">French Maritime Pine Bark Extract</h2>
+          <h2 class="fs-6 fw-bold" style="color: #0e2d52">100 mg, 60 vegetarian capsules | Item # 01637</h2>
+          <p class="fw-medium" style="color: #0e2d52">Scientifically studied longevity & vascular health supplement</p>
+          <div class="0 d-lg-none">
+            <div class="card-body mb-3">
+              <h4 class="card-title" style="color: #0e2d52"> <strong> $48<span style="font-size: 18.66px"><sup>.00</sup></span> </strong> </h4>
+              <p class="card-text m-0">$0.80/count | 30 - 60 Day Supply</p>
+              
+              <p class="m-0"><span class="fw-bold" style="color: #a41f35;">Save 6%</span> on 4+ Units | $45.00 each</p>
+				
+				<hr>
+				
+			  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" data-bs-toggle="collapse" data-bs-target="#mobileAutoShip" aria-expanded="false" aria-controls="mobileAutoShip">
+                  <label class="form-check-label" for="flexRadioDefault1" >
+			  <p class="">Subscribe to <span class="badge custom_badge rounded-pill desktop_autoship_pill p-2" data-bs-toggle="collapse" data-bs-target="#mobileAutoShip" aria-expanded="false" aria-controls="mobileAutoShip">Auto<em>Ship</em></span> and <span class="fw-semibold" style="color: #a41f35;">Save 6%</span> </p>
+				</label>
+				
+			<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="mobileAutoShip">
+            <!-- Collapse-->
+            <div class="card bg-light d-lg-none accordion-collapse rounded">
+              <div class="card-header">
+                
+
+                  <h5 style="color: #0e2d52"><strong>AutoShip & Save</strong></h5>
+                
+                
+                <p class="" style="font-size:14px">Always get the lowest price and <span class="fw-bold" style="color: #a41f35;">FREE SHIPPING</span> with AutoShip. <a href="#" class="text-end m-0 fw-bold" style="color:#0e2d52; text-decoration: none">Learn More</a></p>
+                <p class="m-0 text-end">Original Price: <span class="fw-semibold text-decoration-line-through">$48.00</span></p>
+                <p class="fs-4 m-0 text-end fw-bold" style="color: #a41f35;">AutoShip Price: $45.00</p>
+                <p class="text-end m-0">$0.75/count | 30 - 60 Day Supply</p>
+                <div class="row bg-light pt-1">
+                  <div class="col-5 my-auto px-2">
+                    <div class="input-group input-group-sm">
+                      <button id="btnDecrease3" class="btn rounded-0 border border-secondary" type="button" onClick=qtyDecrease() >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                      </svg>
+                      </button>
+                      <input id ="qtyInput3" type="text" class="form-control rounded-0 text-center border border-secondary border-start-0 border-end-0" value="1" aria-label="Increase or decrease quantity">
+                      <button class="btn rounded-0 border border-secondary" type="button" onClick=qtyIncrease()>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                      </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-7 text-end p-2">
+                    <select class="form-select rounded-0 form-select-sm my-auto border-secondary" aria-label="Default select example">
+                      <!--                                  <option selected>Deliver Once</option>-->
+                      <option selected>Now & Every 15 Days</option>
+                      <!--                                  <option value="1">Now & Every 15 Days</option>-->
+                      <option value="2">Now & Every 30 Days</option>
+                      <option value="3">Now & Every 45 Days</option>
+                      <option value="4">Now & Every 60 Days</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row bg-light justify-content-center px-2">
+                  <button class="btn rounded-0 addToCartBtn" type="button" onClick="addToCart()"><strong>Autoship & Save</strong></button>
+                </div>
+              </div>
+		</div>
+                        
+            <!-- / Collapse-->
+      </div>
+    </div>
+  </div>
+			
+            </div>
+          </div>
+<!-- stars -->
+          <div class="row fw-bold text-success mb-4">
+            <div class="row fs-4 ms-1">4.7
+              <div class="col-6 pb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="ms-1"><a href="#" class="link text-success">90 Reviews</a> | <a href="#" class="link text-success">Write a review</a></div>
+          </div>
+			
+<!-- /stars -->
+			
+          <p>Fight back against Father Time! Our Pycnogenol® vascular health supplement is a patented extract of French maritime pine bark with powerful, scientifically validated benefits for longevity and overall health.</p>
+          <p>Gluten free | Non-GMO | Vegetarian</p>
+          
+          <!-- Version-->
+          
+          <div class="accordion accordion-flush border mb-3  shadow-sm" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h2 class="fs-6 fw-normal mt-2" style="color: #0e2d52">Shop Available Versions: </h2>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="row">
+                      <div class="fw-semibold">25 mcg (1000 IU)</div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary active">90 softgels $3.41</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">250 softgels $9.75</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="fw-semibold">50 mcg (2000 IU)</div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">29.57 liquid $21.00</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">29.57 liquid(mint) $21.00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="fw-semibold">125 mcg (5000 IU)</div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">BEST SELLER 60 softgels $7.50</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">60 vegetarian capsules $16.50</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="fw-semibold">175 mcg (7000 IU)</div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">60 softgels $10.50</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- /Versions	--> 
+          
+          <!--Shop by Health Goals-->
+          
+          <div class="accordion accordion-flush border mb-3  shadow-sm" id="accordionHealthGoals">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h2 class="fs-6 fw-normal mt-2" style="color: #0e2d52">Shop Supplements by Health Goal:</h2>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionHealthGoals">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary active">Anti-Aging & Longevity</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">Blood Pressure & Vascular Health</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">Eye Health</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-6">
+                        <div class="card">
+                          <div type="button" class="btn btn-outline-secondary">Inflammation Management</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--/Shop by Health Goals-->
+          
+          <div class="row d-lg-none fixed-bottom m-0">
+            <div class="row justify-content-start ms-1">
+              <div class="col-7 bg-secondary border border-secondary text-center rounded-3 rounded-bottom-0 border-bottom-0">
+                <button class="btn-sm btn btn-outline-secondary m-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="myFunction()"> <span class="text-white pe-2">Purchase Options</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up text-light" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Collapse-->
+            <div class="card bg-light d-lg-none collapse accordion-collapse rounded-0 " id="collapseExample">
+              <div class="card-header">
+                <div class="form-check">
+
+                  <h5 style="color: #0e2d52"><strong>AutoShip & Save</strong></h5>
+                
+                </div>
+                <p class="" style="font-size:14px">Always get the lowest price and <span class="fw-bold" style="color: #a41f35;">FREE SHIPPING</span> with AutoShip. <a href="#" class="text-end m-0 fw-bold" style="color:#0e2d52; text-decoration: none">Learn More</a></p>
+                <p class="m-0 text-end">Original Price: <span class="fw-semibold text-decoration-line-through">$48.00</span></p>
+                <p class="fs-4 m-0 text-end fw-bold" style="color: #a41f35;">AutoShip Price: $45.00</p>
+                <p class="text-end m-0">$0.75/count | 30 - 60 Day Supply</p>
+                <div class="row bg-light pt-1">
+                  <div class="col-5 my-auto px-2">
+                    <div class="input-group input-group-sm">
+                      <button id="btnDecrease3" class="btn rounded-0 border border-secondary" type="button" onClick=qtyDecrease() >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                      </svg>
+                      </button>
+                      <input id ="qtyInput3" type="text" class="form-control rounded-0 text-center border border-secondary border-start-0 border-end-0" value="1" aria-label="Increase or decrease quantity">
+                      <button class="btn rounded-0 border border-secondary" type="button" onClick=qtyIncrease()>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                      </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-7 text-end p-2">
+                    <select class="form-select rounded-0 form-select-sm my-auto border-secondary" aria-label="Default select example">
+                      <!--                                  <option selected>Deliver Once</option>-->
+                      <option selected>Now & Every 15 Days</option>
+                      <!--                                  <option value="1">Now & Every 15 Days</option>-->
+                      <option value="2">Now & Every 30 Days</option>
+                      <option value="3">Now & Every 45 Days</option>
+                      <option value="4">Now & Every 60 Days</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row bg-light justify-content-center px-2">
+                  <button class="btn rounded-0 addToCartBtn" type="button" onClick="addToCart()"><strong>Autoship & Save</strong></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- / Collapse-->
+            
+            <div class="row bg-light m-0 border border-secondary border-end-0 border-2 border-bottom-0 border-start-0" id="addToCart">
+              <div class="col-5 my-auto px-3">
+                <div class="input-group input-group-sm">
+                  <button id="btnDecrease3" class="btn rounded-0 border-secondary" type="button" onClick=qtyDecrease() >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                  </svg>
+                  </button>
+                  <input id ="qtyInput3" type="text" class="form-control rounded-0 text-center border border-secondary border-start-0 border-end-0" value="1" aria-label="Increase or decrease quantity">
+                  <button class="btn rounded-0 border-secondary" type="button" onClick=qtyIncrease()>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                  </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="col-7 text-end p-2">
+                <button class="btn rounded-0 addToCartBtn px-4" type="button" onClick="addToCart()"> <strong>Add to Cart</strong> </button>
+              </div>
+            </div>
+            
+            <!-- collapse  --> 
+            
+            <!-- /collapse --> 
+            
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <ul class="nav nav-tabs " id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Overview</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Product Details</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Supplement Facts</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#media-tab-pane" type="button" role="tab" aria-controls="media-tab-pane" aria-selected="false">Media</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review-tab-pane" type="button" role="tab" aria-controls="review-tab-pane" aria-selected="false">Reviews/QA</button>
+          </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <h2>What Is Pycnogenol?</h2>
+            <p>Life Extension’s Pycnogenol® helps your body fight back against the normal aging process by inhibiting inflammatory factors and oxidative stress to support overall health, promoting healthy circulation and blood vessel function and maintaining healthy glucose metabolism.</p>
+            <p>Pycnogenol® contains procyanidins, flavonoids and other beneficial compounds that help your body fight the effects of aging.</p>
+            <h3>Pycnogenol® Benefits</h3>
+            <ul>
+              <li> Supports vascular health &amp; healthy circulation</li>
+              <li>Promotes a healthy inflammatory respons</li>
+              <li>Helps maintain already-healthy glucose level</li>
+              <li>Provides powerful antioxidant protection </li>
+            </ul>
+            <h2>Antioxidant Defenses</h2>
+            <p>Pycnogenol® bolsters your body’s antioxidant defenses, inhibiting the free-radical activity that can affect cells, tissue, organs and even DNA. Pycnogenol® also supports healthy glucose metabolism and has showed it can help maintain already-healthy blood sugar levels.</p>
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <h2>Product Details</h2>
+            <p>Pycnogenol® has a long history of clinical research. For a healthy heart, eyes, cells, DNA and lifespan, there are few nutritional supplements that have been studied as extensively.</p>
+            <p>Pycnogenol® helps the body fight normal aging by supporting vascular health and healthy circulation.1-3 It also provides powerful antioxidant protection and helps inhibit inflammatory factors to support whole-body health.4-7</p>
+            <p class="fw-bold">Antioxidant & blood sugar support</p>
+            <p>Pycnogenol® has demonstrated an ability to help maintain already-healthy glucose levels.8 It also bolsters the body’s antioxidant defenses with powerful phytonutrient compounds, inhibiting the free-radical activity that can be damaging to cells, tissue, organs and DNA, as well as inhibiting stress on delicate vascular walls and more.9</p>
+            <p class="fw-bold">Vascular health & circulation</p>
+            <p>Pycnogenol® supports endothelial and arterial health by helping to inhibit inflammatory factors called cytokines. It also encourages healthy nitric oxide levels in the arteries, which supports endothelial function and arterial blood flow and has been shown to promote a healthy inflammatory response and platelet function.10-13</p>
+            <p class="fw-bold">Now available as a single-nutrient supplement</p>
+            <p>We believe in this extract’s health benefits so much, we’ve incorporated it into our arterial, circulatory and ocular health formulas, but you can also add Pycnogenol® to your supplement regimen with this stand-alone product.</p>
+          </div>
+          <div class="tab-pane fade" id="media-tab-pane" role="tabpanel" aria-labelledby="media-tab" tabindex="0">
+            <div class="row justify-content-around">
+              <div class="col-md-6">
+                <div class="fs-3 fw-bold">Actual Size</div>
+              </div>
+              <div class="col-md-6"> <img src="https://www.lifeextension.com/-/media/lifeextension/products/pillsize/pkg204.jpg?rev=1515d9f0c4ee4752b8a878d7558589cc&h=162&w=234&la=en&hash=3DBD957E23B4764BD4808E679B95A942" alt=""> </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <iframe width="450" height="300" src="https://www.youtube.com/embed/8gByubZchWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <h2>Why Should I Supplement With Pycnogenol®?</h2>
+                <p>Aging. We all do it, but that doesn't mean we have to let our age define us. Life Extension’s experts turned to the latest science to help you fight back against the normal aging process. And after extensive research, we've added one common element to many of our formulas for longevity and overall health: Pycnogenol®. And now you can get this amazing anti-aging compound in a standalone supplement.</p>
+                <p>Pycnogenol®, an extract of French maritime pine bark, helps the body fight normal aging by supporting vascular health and healthy circulation.</p>
+                <p>It also provides powerful antioxidant protection and helps inhibit inflammatory factors to support whole-body health</p>
+                <p>Help your body fight the effects of normal aging. Try Pycnogenol® from Life Extension.</p>
+                <p>Reviewed by Dr. Michael A. Smith, MD: Director of Education and Spokesperson for Life Extension.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <h2>Supplement Facts</h2>
+            <div class="row">
+              <div class="col">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td colspan="2">Serving Size 1 vegetarian capsule</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold" colspan="2">Amount Per Serving</td>
+                    </tr>
+                    <tr>
+                      <td>Pycnogenol® dried French Maritime pine extract (bark) [std. to 65% procyanidins]</td>
+                      <td>100mg</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Other ingredients: microcrystalline cellulose, vegetable cellulose (capsule), stearic acid, silica.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>Non-GMO</p>
+                <p>Pycnogenol® is a registered trademark of Horphag Research Ltd. Use of this product may be protected by one or more U.S. patents and other international patents. Supported by over 40 years of research.</p>
+                <p class="fw-bold">Dosage and Use</p>
+                <ul>
+                  <li>Take one (1) capsule once or twice daily, or as recommended by a healthcare practitioner.</li>
+                </ul>
+                <p class="fw-bold"> Warnings </p>
+                <ul>
+                  <li>KEEP OUT OF REACH OF CHILDREN</li>
+                  <li>DO NOT EXCEED RECOMMENDED DOSE</li>
+                  <li>Do not purchase if outer seal is broken or damaged.</li>
+                  <li>When using nutritional supplements, please consult with your physician if you are undergoing treatment for a medical condition or if you are pregnant or lactating.</li>
+                </ul>
+                <p class="pt-3">To report a serious adverse event or obtain product information, contact 1-866-280-2852.</p>
+                <div class="accordion" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> References </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <ol>
+                        <li>Minerva Ginecol. 2017;69(1):29-34.</li>
+                        <li>Nutr Res. 2008;28(5):315-20.</li>
+                        <li>Phytother Res. 2019;33(2):276-287.</li>
+                        <li>DNA Cell Biol. 2016;35(11):730-739.</li>
+                        <li>Food Chem Toxicol. 2013;62:681-6.</li>
+                        <li>Free Radic Biol Med. 2012;52(4):765-74.</li>
+                        <li>Free Radic Biol Med. 2012;52(4):765-74.</li>
+                        <li>Food Chem Toxicol. 2011;49(9):2196-201.</li>
+                        <li>Phytother Res. 2015;29(7):949-68.</li>
+                        <li>Fitoterapia. 2010;81(7):724-36.</li>
+                        <li>Phytother Res. 2014;28(3):348-62.</li>
+                        <li>Eur Heart J. 2012;33(13):1589-97.</li>
+                        <li>Hypertens Res. 2007;30(9):775-80.</li>
+                        <li>Life Sci. 2004;74(7):855-62</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="review-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">...</div>
+        </div>
+      </div>
+    </div>
+    <!-- /col-9	  --> 
+    
+    <!-- col-3 -->
+    <div class="col-md-3"> 
+      <!-- Add To Cart	--> 
+      <!-- One Time Pay--> 
+      <!-- /One Time Pay	-->
+      <div class="sticky-top card pt-2 d-none d-lg-block shadow bg-light">
+        <div class="card-body"> 
+          <!--			<h5 style="color: #0e2d52"><strong>Purchase Options</strong></h5>--> 
+          <!--
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" >
+            <label class="form-check-label" for="flexRadioDefault1">
+            <h5 style="color: #0e2d52"><strong>Purchase Options</strong></h5>
+            </label>
+          </div>
+-->
+			<div id="og_price_wrapper" class="">
+          <p id="original_price" class="m-0 text-end fs-4" style="color: #0e2d52;">Price: <span class="fw-semibold">$48.00</span></p>
+          <p class="text-end m-0">$0.80/count | 30 - 60 Day Supply</p>
+          <p class="text-end"><span class="fw-bold" style="color: #a41f35;">Save 6%</span> on 4+ Units | $45.00 each</p>
+			</div>
+          <hr>
+<!-- AUTOSHIP part-->
+			
+			<p class="fw-bold m-0" id="sub_to_autoship" style="color: #0e2d52;">Pay less with Autoship:</p>
+						<p class="custom_free_shipping mt-1 mb-2">Always get the lowest price and <span class="fw-bold" style="color: #a41f35;">FREE SHIPPING</span>. <a href="#" class="text-end m-0 learn_more" style="color:#0e2d52; text-decoration: none">Learn More</a>.</p>
+			<div id="as_price_wrapper" class="as_opacity_custome">
+          	<p id="autoship_price" class="fs-6 m-0 text-end fw-bold" style="color: #a41f35;">AutoShip Price: $45.00</p>
+          	<p class="text-end m-0 mb-1">$0.75/count | 30 - 60 Day Supply</p>
+
+			</div>
+
+
+				
+<!-- /AUTOSHIP part-->
+<!--          <p class="m-0 text-end fw-semibold" style="color: #a41f35;">Save 6%</p>-->
+          <hr>
+          <div class="row pt-1">
+            <div class="col-4 my-auto px-2">
+              <p class="m-0 mb-1">Qty:</p>
+              <div class="input-group input-group-sm">
+                <button id="btnDecrease" class="btn rounded-0 border border-secondary p-0 px-1" type="button" onClick=qtyDecrease() >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                </svg>
+                </button>
+                <input size="10"  id ="qtyInput" type="text" class="form-control rounded-0 text-center border border-secondary border-start-0 border-end-0 m-0" value="1" aria-label="Increase or decrease quantity">
+                <button id="btnIncrease"class="btn rounded-0 border border-secondary p-0 px-1" type="button" onClick=qtyIncrease()>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col-8 text-end p-2">
+              <p class="m-0 mb-1"> <span 
+						  class="badge custom_badge rounded-pill"
+						  data-bs-toggle="tooltip" 
+						  data-bs-placement="top"
+        				  data-bs-custom-class="custom-tooltip"
+										 data-bs-title="Free Shipping & Guaranteed Lowest Price"><span class="desktop_autoship_pill ">Auto</span><em>Ship</em></span> <small class="fw-semibold" style="color: #a41f35;">Save 6%</small> </p>
+              <select id="delivery_dropdown" class="form-select rounded-0 form-select-sm my-auto border-secondary" aria-label="Default select example" onChange="GetSelectedTextValue()">
+                <option selected>Deliver Once</option>
+                <!--                      <option selected>Now & Every 15 Days</option>-->
+                <option value="1">Now & Every 15 Days</option>
+                <option value="2">Now & Every 30 Days</option>
+                <option value="3">Now & Every 45 Days</option>
+                <option value="4">Now & Every 60 Days</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-center px-2">
+            <button id="add_to_cart_DT" class="btn rounded-0 addToCartBtn" type="button"><strong>Add To Cart</strong></button>
+          </div>
+        </div>
+      </div>
+      <!-- HTML to write --> 
+      
+      <!-- Generated markup by the plugin --> 
+      
+      <!-- AUTOSHIP --> 
+      
+    </div>
+  </div>
+</div>
+<!-- /container --> 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> 
+<!--Loading Custom Scripts--> 
+<script type="text/javascript" src="pdp_project.js"></script>
+</body>
+</html>
