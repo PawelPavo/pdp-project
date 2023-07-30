@@ -68,6 +68,9 @@ body {
 	font-size: 13px;
 }
 
+#plus:hover {
+	color: #0e2d52 !important;}
+
 .nav-link {
 	color: #0D95A5 !important;
 	font-size: 1.3rem !important;
