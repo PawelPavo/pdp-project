@@ -9,58 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&family=Zilla+Slab&display=swap" rel="stylesheet">
 <link href="pdp_project.css" rel="stylesheet" type="text/css">
-<script>
-function myFunction() {
-   var element = document.getElementById("addToCart");
-   element.classList.toggle("collapse");
-}
-	
-	function changeAutoShipPrice (){
-		var element = document.getElementById("autoship_price");
-		element.classList.toggle("fs-4")
-		
-		var element = document.getElementById("original_price");
-		element.classList.toggle("fs-4")
-		
-		var element = document.getElementById("original_price");
-		element.classList.toggle("text-decoration-line-through")			
-    }
-	
-	function GetSelectedTextValue() {
-		var selectBox = document.getElementById("delivery_dropdown");
-  		var selectedValue = selectBox.value;
-		
-		if (selectedValue=="Deliver Once"){
-				var element = document.getElementById("original_price");
-				element.classList.toggle("text-decoration-line-through")
-				var element = document.getElementById("autoship_price");
-				element.classList.remove("fs-4")
-				var element = document.getElementById("og_price_wrapper")
-				element.classList.remove("opacity_custome")
-				document.querySelector("#add_to_cart_DT").textContent = "Add to Cart";
-				document.querySelector("#sub_to_autoship").textContent = "Pay less with AutoShip:";
-				var element = document.getElementById("as_price_wrapper")
-				element.classList.add("as_opacity_custome")
-		} else {
-			var element = document.getElementById("autoship_price");
-			element.classList.add("fs-4")
-			var element = document.getElementById("original_price");
-			element.classList.add("text-decoration-line-through")
-			document.querySelector("#add_to_cart_DT").textContent = "Subscribe to AutoShip";
-			var element = document.getElementById("add_to_cart_DT")
-			element.classList.add("fw-bold")
-			var element = document.getElementById("og_price_wrapper")
-			element.classList.add("opacity_custome")
-			var element = document.getElementById("as_price_wrapper")
-			element.classList.remove("as_opacity_custome")
-			document.querySelector("#sub_to_autoship").textContent = "";
-		}
-		
-		
-		
-	}
-	
-</script>
 </head>
 
 <body>
@@ -70,6 +18,33 @@ function myFunction() {
       <div class="row">
         <div class="col-md-4">
           <div class="card border-0">
+
+            <!-- stars mobile -->
+          <div class="row fw-bold text-success mb-4 d-lg-none">
+            <div class="row fs-4 ms-1">4.7
+              <div class="col-6 pb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="ms-1"><a href="#" class="link">90 Reviews</a> | <a href="#" class="link">Write a review</a></div>
+          </div>
+			
+<!-- /stars -->
+
             <div class="text-center my-2"> <img src="https://www.lifeextension.com/-/media/lifeextension/products/large/01637.png?rev=f84557186a484f3eadd9dfd4e8b576e8&amp;la=en&amp;h=400&amp;hash=C8BF27153087BC70002EA52A84705F12" class="w-50 card-img-top" alt=""> </div>
             <div class="card-body">
               <p class="card-text text-center">Click to Zoom</p>
@@ -83,18 +58,22 @@ function myFunction() {
           <p class="fw-medium" style="color: #0e2d52">Scientifically studied longevity & vascular health supplement</p>
           <div class="0 d-lg-none">
             <div class="card-body mb-3">
-              <h4 class="card-title" style="color: #0e2d52"> <strong> $48<span style="font-size: 18.66px"><sup>.00</sup></span> </strong> </h4>
+              <h4 id="original_price_mobile" class="card-title" style="color: #0e2d52"> <strong> $48<span style="font-size: 18.66px"><sup>.00</sup></span> </strong> </h4>
               <p class="card-text m-0">$0.80/count | 30 - 60 Day Supply</p>
-              
               <p class="m-0"><span class="fw-bold" style="color: #a41f35;">Save 6%</span> on 4+ Units | $45.00 each</p>
 				
 				<hr>
 				
-			  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" data-bs-toggle="collapse" data-bs-target="#mobileAutoShip" aria-expanded="false" aria-controls="mobileAutoShip">
-                  <label class="form-check-label" for="flexRadioDefault1" >
+			  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" data-bs-toggle="collapse" data-bs-target="#mobileAutoShip" aria-expanded="false" aria-controls="mobileAutoShip" onChange="hide_autoship_info_mbile()">
+                  <label class="form-check-label" for="flexRadioDefault1">
 			  <p class="">Subscribe to <span class="badge custom_badge rounded-pill desktop_autoship_pill p-2" data-bs-toggle="collapse" data-bs-target="#mobileAutoShip" aria-expanded="false" aria-controls="mobileAutoShip">Auto<em>Ship</em></span> and <span class="fw-semibold" style="color: #a41f35;">Save 6%</span> </p>
 				</label>
-				
+        <div id="autoship_mobile_info" class="">
+        <p class="m-0 fw-bold ms-3" style="color: #a41f35;">Autoship Price: $45.00</p>
+        <small class="ms-3">$0.75/count | 30 - 60 Day Supply</small>
+      </div>
+      <p class="mt-1 ms-3" style="font-size:14px">Always get the lowest price and <span class="fw-bold" style="color: #a41f35;">FREE SHIPPING</span> with AutoShip. <a href="#" class="text-end m-0 fw-bold" style="color:#0e2d52; text-decoration: none">Learn More</a></p>
+
 			<div class="row">
   <div class="col">
     <div class="collapse multi-collapse" id="mobileAutoShip">
@@ -106,7 +85,7 @@ function myFunction() {
                   <h5 style="color: #0e2d52"><strong>AutoShip & Save</strong></h5>
                 
                 
-                <p class="" style="font-size:14px">Always get the lowest price and <span class="fw-bold" style="color: #a41f35;">FREE SHIPPING</span> with AutoShip. <a href="#" class="text-end m-0 fw-bold" style="color:#0e2d52; text-decoration: none">Learn More</a></p>
+                <!-- <p class="" style="font-size:14px">Always get the lowest price and <span class="fw-bold" style="color: #a41f35;">FREE SHIPPING</span> with AutoShip. <a href="#" class="text-end m-0 fw-bold" style="color:#0e2d52; text-decoration: none">Learn More</a></p> -->
                 <p class="m-0 text-end">Original Price: <span class="fw-semibold text-decoration-line-through">$48.00</span></p>
                 <p class="fs-4 m-0 text-end fw-bold" style="color: #a41f35;">AutoShip Price: $45.00</p>
                 <p class="text-end m-0">$0.75/count | 30 - 60 Day Supply</p>
@@ -150,8 +129,8 @@ function myFunction() {
 			
             </div>
           </div>
-<!-- stars -->
-          <div class="row fw-bold text-success mb-4">
+<!-- stars desktop -->
+          <div class="row fw-bold text-success mb-4 d-none d-lg-block">
             <div class="row fs-4 ms-1">4.7
               <div class="col-6 pb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -175,7 +154,7 @@ function myFunction() {
           </div>
 			
 <!-- /stars -->
-			
+<hr>
           <p>Fight back against Father Time! Our Pycnogenol® vascular health supplement is a patented extract of French maritime pine bark with powerful, scientifically validated benefits for longevity and overall health.</p>
           <p>Gluten free | Non-GMO | Vegetarian</p>
           
@@ -299,20 +278,17 @@ function myFunction() {
               </div>
             </div>
             
-            <!-- Collapse-->
+            <!-- Collapse drawer auto ship mobile-->
             <div class="card bg-light d-lg-none collapse accordion-collapse rounded-0 " id="collapseExample">
               <div class="card-header">
-                
-
-                  <h5 style="color: #0e2d52"><strong>AutoShip & Save</strong></h5>
-                
-                
+                  <h5 id="drawer_autoship" style="color: #0e2d52"><strong>AutoShip & Save</strong></h5>
                 <p class="" style="font-size:14px">Always get the lowest price and <span class="fw-bold" style="color: #a41f35;">FREE SHIPPING</span> with AutoShip. <a href="#" class="text-end m-0 fw-bold" style="color:#0e2d52; text-decoration: none">Learn More</a></p>
-                <p class="m-0 text-end">Original Price: <span class="fw-semibold text-decoration-line-through">$48.00</span></p>
-                <p class="fs-4 m-0 text-end fw-bold" style="color: #a41f35;">AutoShip Price: $45.00</p>
-                <p class="text-end m-0">$0.75/count | 30 - 60 Day Supply</p>
-                <div class="row bg-light pt-1">
+                <p id="drawer_autoship_original_price" class="m-0 text-end fw-semibold text-decoration-line-through" style="color: #0e2d52">Original Price: $48.00</p>
+                <p id="drawer_autoship_autoship_price" class="fs-4 m-0 text-end fw-bold" style="color: #a41f35;">AutoShip Price: $45.00</p>
+                <p id="drawer_autoship_count" class="text-end m-0">$0.75/count | 30 - 60 Day Supply</p>
+                <div class="row pt-1">
                   <div class="col-5 my-auto px-2">
+                    <p class="m-0 mb-1">Qty:</p>
                     <div class="input-group input-group-sm">
                       <button id="btnDecrease3" class="btn rounded-0 border border-secondary" type="button" onClick=qtyDecrease() >
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
@@ -328,10 +304,11 @@ function myFunction() {
                     </div>
                   </div>
                   <div class="col-7 text-end p-2">
-                    <select class="form-select rounded-0 form-select-sm my-auto border-secondary" aria-label="Default select example">
-                      <!--                                  <option selected>Deliver Once</option>-->
-                      <option selected>Now & Every 15 Days</option>
-                      <!--                                  <option value="1">Now & Every 15 Days</option>-->
+                    <p class="m-0 mb-1">Select option:</p>
+                    <select id="drawer_autoship_select" class="form-select rounded-0 form-select-sm my-auto border-secondary" aria-label="Default select example" onchange="chooseDeliveryMobile()">
+                      <option>Deliver Once</option>
+                      <!-- <option selected>Now & Every 15 Days</option> -->
+                      <option value="1" selected>Now & Every 15 Days</option>
                       <option value="2">Now & Every 30 Days</option>
                       <option value="3">Now & Every 45 Days</option>
                       <option value="4">Now & Every 60 Days</option>
@@ -339,7 +316,7 @@ function myFunction() {
                   </div>
                 </div>
                 <div class="row bg-light justify-content-center px-2">
-                  <button class="btn rounded-0 addToCartBtn" type="button" onClick="addToCart()"><strong>Autoship & Save</strong></button>
+                  <button id="drawer_autoship_purchase_btn" class="btn rounded-0 addToCartBtn" type="button" onClick="addToCart()"><strong>Autoship & Save</strong></button>
                 </div>
               </div>
             </div>
@@ -570,7 +547,7 @@ function myFunction() {
 						  data-bs-placement="top"
         				  data-bs-custom-class="custom-tooltip"
 										 data-bs-title="Free Shipping & Guaranteed Lowest Price"><span class="desktop_autoship_pill ">Auto</span><em>Ship</em></span> <small class="fw-semibold" style="color: #a41f35;">Save 6%</small> </p>
-              <select id="delivery_dropdown" class="form-select rounded-0 form-select-sm my-auto border-secondary" aria-label="Default select example" onChange="GetSelectedTextValue()">
+              <select id="delivery_dropdown" class="form-select rounded-0 form-select-sm my-auto border-secondary" aria-label="Default select example" onChange="chooseDeliveryDesktop()">
                 <option selected>Deliver Once</option>
                 <!--                      <option selected>Now & Every 15 Days</option>-->
                 <option value="1">Now & Every 15 Days</option>

@@ -31,6 +31,7 @@ body {
 
 .link {
 	text-decoration: none;
+	color: #0D95A5 !important;
 }
 
 .autoship {
@@ -88,7 +89,6 @@ body {
   .nav-item.show .nav-link {
     color: #0e2d52 !important;
 	font-weight: 700;
-    background-color: var(--#{$prefix}nav-tabs-link-active-bg);
     border-color: #0e2d52 !important;
   }
 
