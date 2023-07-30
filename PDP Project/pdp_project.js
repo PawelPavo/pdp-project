@@ -84,6 +84,8 @@ function hide_autoship_info_mbile(){
   element.classList.toggle("d-none");
   var element = document.getElementById("original_price_mobile");
   element.classList.toggle("text-decoration-line-through");
+  var element = document.getElementById("purchase_option")
+  element.classList.toggle("d-none")
 }
 
 
