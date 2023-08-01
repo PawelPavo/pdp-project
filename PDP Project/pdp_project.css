@@ -34,6 +34,16 @@ body {
 	color: #0D95A5 !important;
 }
 
+.stars_link {
+	color: #198754 !important;
+	text-decoration: none;
+
+}
+
+.stars_link:hover {
+	text-decoration: underline;
+}
+
 .autoship {
 	color: red;
 }
@@ -100,4 +110,6 @@ body {
   --bs-tooltip-bg: #0e2d52;
   --bs-tooltip-color: #FFFFFF;
 }
+
+
 
