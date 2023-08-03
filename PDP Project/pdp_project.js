@@ -89,5 +89,37 @@ function hide_autoship_info_mbile(){
 }
 
 
+function activate_wish_list() {
+	var list = document.getElementById("wish_list");
+    var selectedValue = list.value;
+	var icon = document.getElementById("icon")
+	var choose = document.getElementById("choose")
+	var heart = document.getElementById("heart")
+	var plus = document.getElementById("add_to_wish")
+	
+
+	
+	if (selectedValue == "Choose a list" || selectedValue == 4){
+		heart.classList.add("disabled");
+		icon.classList.remove("fa-solid");
+		icon.classList.add("fa-regular");
+		plus.classList.add("disabled");
+	}
+	
+	else {
+		icon.classList.remove("fa-regular");
+		icon.classList.add("fa-solid");
+		heart.classList.remove("disabled");
+		plus.classList.remove("disabled");
+	}
+	
+	
+}
+
+function added_to_wish_list(){
+	alert("You added Pycnogenol to your wish list!")
+}
+
+
 
 
