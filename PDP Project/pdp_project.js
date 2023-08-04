@@ -118,6 +118,18 @@ function added_to_wish_list(){
 	alert("You added Pycnogenol to your wish list!")
 }
 
+function hide_autoship_info_desktop() {
+  var element = document.getElementById("og_price_wrapper")
+  element.classList.toggle("opacity_custome")
+  var element = document.getElementById("original_price");
+  element.classList.toggle("text-decoration-line-through")
+  var element = document.getElementById("addToCartDesktop")
+  element.classList.toggle("d-none")
+  var element = document.getElementById("autoship_desktop_info")
+  element.classList.toggle("as_opacity_custome")
+
+}
+
 
 
 
