@@ -100,7 +100,6 @@ function activate_wish_list() {
 
 	
 	if (selectedValue == "Choose a list" || selectedValue == 4){
-		heart.classList.add("disabled");
 		icon.classList.remove("fa-solid");
 		icon.classList.add("fa-regular");
 		plus.classList.add("disabled");
@@ -109,7 +108,6 @@ function activate_wish_list() {
 	else {
 		icon.classList.remove("fa-regular");
 		icon.classList.add("fa-solid");
-		heart.classList.remove("disabled");
 		plus.classList.remove("disabled");
 	}
 	
