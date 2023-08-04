@@ -12,13 +12,12 @@ body {
 /*NAVBAR*/
 
 #add_to_wish {
-
-		color: white;
-	background-color: var(--orange)
+	color: white;
+	background-color: var(--orange);
 }
 
 #add_to_wish:hover {
-	color: var(--;
+	color: var(--orange);
 	background-color: white;
 }
 
