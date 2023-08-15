@@ -11,6 +11,8 @@ body {
 }
 /*NAVBAR*/
 
+
+
 #add_to_wish {
 	color: white;
 	background-color: var(--orange);
@@ -19,6 +21,10 @@ body {
 #add_to_wish:hover {
 	color: var(--orange);
 	background-color: white;
+}
+
+#icon:hover {
+color: #0e2d52;
 }
 
 .make-me-sticky{
