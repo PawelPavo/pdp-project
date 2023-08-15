@@ -91,7 +91,7 @@ function hide_autoship_info_mbile(){
 
 function activate_wish_list() {
 	var list = document.getElementById("wish_list");
-    var selectedValue = list.value;
+  var selectedValue = list.value;
 	var icon = document.getElementById("icon")
 	var plus = document.getElementById("add_to_wish")
 	
@@ -128,6 +128,32 @@ function hide_autoship_info_desktop() {
 
 }
 
+function fbt_price_change() {
+  var FBT1 = document.getElementById("FBT1");
+  var FBT2 = document.getElementById("FBT2");
 
+  if (FBT1.checked && FBT2.checked) {
+    document.querySelector("#FBT_price").textContent = "$78.00";
+    document.querySelector("#FBT_add_to_cart").textContent = "Add All to Cart";
+    document.querySelector("#FBT_add_to_cart").classList.remove("d-none")
+    document.querySelector("#FBT_choose_item").classList.add("d-none")
+  } else if (FBT1.checked) {
+    document.querySelector("#FBT_price").textContent = "48.00";
+    document.querySelector("#FBT_add_to_cart").textContent = "Add to Cart";
+    document.querySelector("#FBT_add_to_cart").classList.remove("d-none")
+    document.querySelector("#FBT_choose_item").classList.add("d-none")
+  } else if ((!FBT1.checked && !FBT2.checked)) {
+    document.querySelector("#FBT_price").textContent = "$0.00";
+    document.querySelector("#FBT_add_to_cart").classList.add("d-none")
+    document.querySelector("#FBT_choose_item").classList.remove("d-none")
+  } else {
+    document.querySelector("#FBT_price").textContent = "$30.00";
+    document.querySelector("#FBT_add_to_cart").textContent = "Add to Cart";
+    document.querySelector("#FBT_add_to_cart").classList.remove("d-none")
+    document.querySelector("#FBT_choose_item").classList.add("d-none")
+  }
+}
+
+FBT_choose_item
 
 
