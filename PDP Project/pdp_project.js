@@ -93,8 +93,6 @@ function activate_wish_list() {
 	var list = document.getElementById("wish_list");
     var selectedValue = list.value;
 	var icon = document.getElementById("icon")
-	var choose = document.getElementById("choose")
-	var heart = document.getElementById("heart")
 	var plus = document.getElementById("add_to_wish")
 	
 
