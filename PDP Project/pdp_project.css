@@ -32,6 +32,15 @@ color: #0e2d52;
 	top: 220px;
 }
 
+
+.shop_all_pycnogenol {
+  color: var(--light-blue);
+}
+
+.shop_all_pycnogenol:hover {
+  color: var(--dark-blue);
+}
+
 .header-container {
   background-color: white !important;
   padding: 20px 0 15px;
@@ -276,6 +285,8 @@ div.scrollmenu a:hover {
     display: none;
   }
 }
+
+
 /*// X-Large devices (large desktops, 1200px and up)*/
 @media (max-width: 1200px) {
   .offcanvas {
